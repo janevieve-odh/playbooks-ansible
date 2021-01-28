@@ -1,0 +1,5 @@
+---
+  - hosts: dbservers
+    tasks:
+      - name: Installs php on Database server
+        apt: pkg=mysql-server state=present

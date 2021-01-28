@@ -1,0 +1,5 @@
+---
+- hosts: appservers
+  tasks:
+    - name: Installs PHP on App servers
+      apt: pkg=php state=present
